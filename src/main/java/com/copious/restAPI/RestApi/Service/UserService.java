@@ -62,7 +62,7 @@ public class UserService {
                         else{
                             if(isDuplicateId(u.getId_Number())){
                                 throw new InvalidUserException(ExceptionCode.INVALID_USER,ExceptionCode.INVALID_USER.getErrorMessege(),
-                                        u.getId_Number()+" This id is already present"
+                                        u.getId_Number()+ " This id is already present in arraylist"
                                 );
 
                             }

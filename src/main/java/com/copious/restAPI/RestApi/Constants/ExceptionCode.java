@@ -25,4 +25,9 @@ public enum ExceptionCode
     public HttpStatus getHttpStatus() {
         return httpStatus;
     }
+
+    public String getMessage()
+    {
+        return errorMessege;
+    }
 }

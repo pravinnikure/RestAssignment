@@ -44,7 +44,7 @@ public class UserDao
                 });
 
 
-        //Returbed updated employee
+        //Returbed updated user
 
         return
                 userList

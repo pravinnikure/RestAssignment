@@ -1,6 +1,6 @@
 package com.copious.restAPI.RestApi.Controller;
 
-import com.copious.restAPI.RestApi.Model.GenericResponse;
+import com.copious.restAPI.RestApi.Exceptions.GenericResponse;
 import com.copious.restAPI.RestApi.Model.User;
 import com.copious.restAPI.RestApi.Service.UserService;
 import io.swagger.annotations.ApiOperation;

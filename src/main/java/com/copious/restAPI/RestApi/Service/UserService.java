@@ -30,8 +30,8 @@ public class UserService {
     {
         return userDao.getUserByMobile(mobileNumber)
                 .orElseThrow(()->new UserNotFoundException(ExceptionCode.NO_USER_FOUND
-                        ,"User's mobile not found"
-                        ,"User's mobile not found"));
+                        ," User's mobile not found"
+                        ," User's mobile not found"));
     }
 
 /*    //Get user based on first name
@@ -56,19 +56,19 @@ public class UserService {
                         if(isNotValidSAId(u.getId_Number())){
                             throw new InvalidUserException(ExceptionCode.NO_USER_FOUND,ExceptionCode
                                     .INVALID_USER.getErrorMessege(),
-                                    u.getId_Number()+" Is not valid"
+                                    u.getId_Number()+" This ID is not valid"
                             );
                         }
                         else{
                             if(isDuplicateId(u.getId_Number())){
                                 throw new InvalidUserException(ExceptionCode.INVALID_USER,ExceptionCode.INVALID_USER.getErrorMessege(),
-                                        u.getId_Number()+"Is duplicate"
+                                        u.getId_Number()+" This id is already present"
                                 );
 
                             }
                             else if(isDuplicateMobile(u.getMobileNumber())){
                                 throw new InvalidUserException(ExceptionCode.INVALID_USER,ExceptionCode.INVALID_USER.getErrorMessege(),
-                                        u.getMobileNumber()+"is duplicate mobile number");
+                                        u.getMobileNumber()+" this mobile number already present");
 
                             }
                             return u;

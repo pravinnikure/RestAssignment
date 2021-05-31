@@ -1,4 +1,4 @@
-package com.copious.restAPI.RestApi.Model;
+package com.copious.restAPI.RestApi.Exceptions;
 
 import io.swagger.annotations.ApiModelProperty;
 
